@@ -7,6 +7,7 @@ string path = Directory.GetCurrentDirectory() + "\\nlog.config";
 var logger = LogManager.LoadConfiguration(path).GetCurrentClassLogger();
 logger.Info("Program started");
 
+/*
 Movie movie = new Movie
 {
     mediaId = 123,
@@ -39,6 +40,9 @@ Book book = new Book
     genres = { "Suspense", "Mystery" }
 };
 Console.WriteLine(book.Display());
+*/
 
+string scrubbedFile = FileScrubber.ScrubMovies("movies.csv");
+logger.Info(scrubbedFile);
 
 logger.Info("Program ended");
