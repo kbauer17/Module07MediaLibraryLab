@@ -29,5 +29,16 @@ Album album = new Album
 };
 Console.WriteLine(album.Display());
 
+Book book = new Book
+{
+    mediaId = 111,
+    title = "Super Cool Book",
+    author = "Jeff Grissom",
+    pageCount = 101,
+    publisher = "",
+    genres = { "Suspense", "Mystery" }
+};
+Console.WriteLine(book.Display());
+
 
 logger.Info("Program ended");
