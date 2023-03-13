@@ -67,6 +67,17 @@ do
     movie.title = Console.ReadLine();
     // verify title is unique
     if (movieFile.isUniqueTitle(movie.title)){
+
+        // ask user to input movie director
+        Console.WriteLine("Enter movie director");
+        // input title
+        movie.director = Console.ReadLine();
+
+        // ask user to input movie running time
+        Console.WriteLine("Enter movie running time (hh:mm:ss)");
+        movie.runningTime = TimeSpan.Parse(Console.ReadLine());
+
+
       // input genres
       string input;
       do
