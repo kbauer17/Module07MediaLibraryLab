@@ -19,4 +19,15 @@ Movie movie = new Movie
 
 Console.WriteLine(movie.Display());
 
+Album album = new Album
+{
+    mediaId = 321,
+    title = "Greatest Album Ever, The (2020)",
+    artist = "Jeff's Awesome Band",
+    recordLabel = "Universal Music Group",
+    genres = { "Rock" }
+};
+Console.WriteLine(album.Display());
+
+
 logger.Info("Program ended");
